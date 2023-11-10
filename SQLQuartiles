@@ -1,0 +1,54 @@
+select * from projectpopulation
+select MAX(peaceindex) AS highest_value
+FROM projectpopulation;
+SELECT MIN(peaceindex) AS lowest_value
+FROM projectpopulation;
+
+SELECT
+  peaceindex,
+  NTILE(4) OVER (ORDER BY peaceindex) AS quartile
+FROM
+  projectpopulation;
+  
+SELECT
+  costofliving,
+  NTILE(4) OVER (ORDER BY costofliving) AS quartile
+FROM
+  projectpopulation;
+  
+  select * from projectpopulation
+  
+WITH QuartileCTE AS (
+  SELECT
+    peaceindex,
+    NTILE(4) OVER (ORDER BY peaceindex) AS quartile
+  FROM
+    projectpopulation
+)
+SELECT
+  quartile,
+  MIN(peaceindex) AS min_value,
+  MAX(peaceindex) AS max_value,
+  MAX(peaceindex) - MIN(peaceindex) AS range
+FROM
+  QuartileCTE
+GROUP BY
+  quartile;  
+  
+WITH QuartileCTE AS (
+  SELECT
+    costofliving,
+    NTILE(4) OVER (ORDER BY costofliving) AS quartile
+  FROM
+    projectpopulation
+)
+SELECT
+  quartile,
+  MIN(costofliving) AS min_value,
+  MAX(costofliving) AS max_value,
+  MAX(costofliving) - MIN(costofliving) AS range
+FROM
+  QuartileCTE
+GROUP BY
+  quartile;  
+    
