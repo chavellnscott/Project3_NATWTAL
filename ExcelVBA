@@ -1,0 +1,3 @@
+//Extract list items in excel cell simply showing 'list'
+
+if (Value.Is([Official language], type list)) then Text.Combine([Official language], ", ") else [Official language]
