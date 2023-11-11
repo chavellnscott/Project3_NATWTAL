@@ -30,30 +30,57 @@ function doTheThing(d) {
             return {
                 weight: 2,
                 opacity: 1,
-                color: 'green',
-                fillOpacity: 0.3
+                fillColor: 'green',
+                color: 'black',
+                fillOpacity: 1
             };
      
     },
         onEachFeature: function (feature,layer){
             let country = feature.properties.ADMIN;
-            
-            layer.bindPopup(`<h3>${country}</h3><ol>Cost of living: ${feature.properties.costofliving}</ol>
-            <ol>Peace Index: ${feature.properties.peaceindex}</ol>
-            <ol>Official Language(s): ${feature.properties.officiallanguage}</ol>
-            <ol>Peace Rank(s): ${feature.properties.peacerank}</ol>
-            <ol>Population Rank(s): ${feature.properties.populationrank}</ol>
-            <ol>Population(s): ${feature.properties.population}</ol>
-            <ol>Population Density(s): ${feature.properties.populationdensity}</ol>`, {
-                maxWidth: 550,
-            })
-    
+            if(feature.properties.officiallanguage){
+                layer.bindPopup(`<h3>${country}</h3><ol>Cost of living: ${feature.properties.costofliving}</ol>
+                <ol>Peace Index: ${feature.properties.peaceindex}</ol>
+                <ol>Official Language(s): ${feature.properties.officiallanguage}</ol>
+                <ol>Peace Rank: ${feature.properties.peacerank}</ol>
+                <ol>Population Rank: ${feature.properties.populationrank}</ol>
+                <ol>Population: ${feature.properties.population}</ol>
+                <ol>Population Density: ${feature.properties.populationdensity}</ol>`, {
+                    maxWidth: 550
+                });
+                layer.on({mouseover: event =>{
+                    let currentLayer = event.target
+                    currentLayer.setStyle({fillColor: 'lightgreen'});
+                }})
+                layer.on({mouseout: event =>{
+                    let currentLayer = event.target
+                    currentLayer.setStyle({fillColor: 'green'});
+                }})
+            }
+            else{
+                layer.bindPopup(`<h3>${country}</h3>`)
+            }
     }})
+    myGeoJson.setStyle(function (feature) {
+            
+        if (!feature.properties.officiallanguage){
+                return{
+                    weight: 2,
+                    opacity: 1,
+                    fillColor: 'gray',
+                    color: 'black',
+                    fillOpacity: 1
+                }
+            }
+    })
     myGeoJson.addTo(myMap);
     
 }
 function updateLeaflet(){
-    let currentLanguage = languageInput.property("value");
+    
+    let languageInput = d3.select('#selLanguage2')
+    let currentLanguage = languageInput.property("value").toLowerCase();
+    console.log(currentLanguage)
     d3.json('countries.geojson').then(d=> {
         let features = d.features
         features.forEach(feature_data => {
@@ -67,31 +94,74 @@ function updateLeaflet(){
                     
                 })
             }
-        });
-        let myGeoJson =L.geoJson(d, {
+            language = country_properties.officiallanguage
+            
+    })
+    let myGeoJson =L.geoJson(d, {
             style: () =>{
                 return {
                     weight: 2,
                     opacity: 1,
-                    color: 'blue',
-                    fillOpacity: 0.3
+                    fillColor: 'gray',
+                    color: 'black',
+                    fillOpacity: 1
                 };
          
         },
-            onEachFeature: function (feature,layer){
-                let country = feature.properties.ADMIN;
-                
-                layer.bindPopup(`<h3>${country}</h3><ol>Cost of living: ${feature.properties.costofliving}</ol>
-                <ol>Peace Index: ${feature.properties.peaceindex}</ol>
-                <ol>Official Language(s): ${feature.properties.officiallanguage}</ol>
-                <ol>Peace Rank(s): ${feature.properties.peacerank}</ol>
-                <ol>Population Rank(s): ${feature.properties.populationrank}</ol>
-                <ol>Population(s): ${feature.properties.population}</ol>
-                <ol>Population Density(s): ${feature.properties.populationdensity}</ol>`, {
-                    maxWidth: 550,
-                })
-        
-        }})
+        onEachFeature: function (feature,layer){
+            let country = feature.properties.ADMIN;
+            if(feature.properties.officiallanguage){
+                if (feature.properties.officiallanguage.toLowerCase().includes(currentLanguage)){
+                    layer.bindPopup(`<h3>${country}</h3><ol>Cost of living: ${feature.properties.costofliving}</ol>
+                    <ol>Peace Index: ${feature.properties.peaceindex}</ol>
+                    <ol>Official Language(s): ${feature.properties.officiallanguage}</ol>
+                    <ol>Peace Rank: ${feature.properties.peacerank}</ol>
+                    <ol>Population Rank: ${feature.properties.populationrank}</ol>
+                    <ol>Population: ${feature.properties.population}</ol>
+                    <ol>Population Density: ${feature.properties.populationdensity}</ol>`, {
+                        maxWidth: 550
+                    });
+                    layer.on({mouseover: event =>{
+                        let currentLayer = event.target
+                        currentLayer.setStyle({fillColor: 'lightgreen'});
+                    }})
+                    layer.on({mouseout: event =>{
+                        let currentLayer = event.target
+                        currentLayer.setStyle({fillColor: 'green'});
+                    }})
+                }
+                else {
+                    layer.bindPopup(`<h3>${country}</h3><ol>Cost of living: ${feature.properties.costofliving}</ol>
+                    <ol>Peace Index: ${feature.properties.peaceindex}</ol>
+                    <ol>Official Language(s): ${feature.properties.officiallanguage}</ol>
+                    <ol>Peace Rank: ${feature.properties.peacerank}</ol>
+                    <ol>Population Rank: ${feature.properties.populationrank}</ol>
+                    <ol>Population: ${feature.properties.population}</ol>
+                    <ol>Population Density: ${feature.properties.populationdensity}</ol>`, {
+                        maxWidth: 550
+                    });
+                }
+            }
+            else{
+                layer.bindPopup(`<h3>${country}</h3>`)
+            }
+    }})
+        myGeoJson.setStyle(function (feature) {
+            
+            if (feature.properties.officiallanguage){
+                if (feature.properties.officiallanguage.toLowerCase().includes(currentLanguage)){
+                    return{
+                        weight: 2,
+                        opacity: 1,
+                        fillColor: 'green',
+                        color: 'black',
+                        fillOpacity: 1
+                    }
+                }
+            }
+        })
         myGeoJson.addTo(myMap);
-    })
+        });
+        
+        
 }
