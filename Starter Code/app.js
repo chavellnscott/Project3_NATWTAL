@@ -1,3 +1,33 @@
+//Create a function to hide all elements
+function hideAll() {
+    d3.select("#table-tab").attr("style", "display:none")
+    d3.select("#plot-tab").attr("style", "display:none")
+   d3.select("#map-tab").attr("style", "display:none")
+}
+//Create a click event that will populate the table
+d3.select("#table-tab-id").on("click", () => {
+    hideAll()
+    d3.select("#table-tab").attr("style", "display:block")
+    d3.select("#home-tab").attr("style", "display:none")
+})
+//Create a click event that will populate the plot
+d3.select("#plot-tab-id").on("click", () => {
+    hideAll()
+    d3.select("#plot-tab").attr("style", "display:block")
+    d3.select("#home-tab").attr("style", "display:none")
+})
+//Create a click event that will populate the map
+d3.select("#map-tab-id").on("click", () => {
+    hideAll()
+    d3.select("#map-tab").attr("style", "display:block")
+    d3.select("#home-tab").attr("style", "display:none") 
+})
+//Create a click event that will bring you back to the home tab
+d3.select("#home-tab-id").on("click", () => {
+    hideAll()
+    d3.select("#home-tab").attr("style", "display:block")
+
+})
 //--TABLE--
 // Select the table by id
 let worldTable = d3.select('#world-data')
@@ -11,32 +41,6 @@ data.forEach(element => {
     Object.entries(element).forEach(([key,value]) => {
         newRow.append('td').text(value)
     })
-})
-
-function hideAll() {
-    d3.select("#table-tab").attr("style", "display:none")
-    d3.select("#plot-tab").attr("style", "display:none")
-   d3.select("#map-tab").attr("style", "display:none")
-}
-d3.select("#table-tab-id").on("click", () => {
-    hideAll()
-    d3.select("#table-tab").attr("style", "display:block")
-    d3.select("#home-tab").attr("style", "display:none")
-})
-d3.select("#plot-tab-id").on("click", () => {
-    hideAll()
-    d3.select("#plot-tab").attr("style", "display:block")
-    d3.select("#home-tab").attr("style", "display:none")
-})
-d3.select("#map-tab-id").on("click", () => {
-    hideAll()
-    d3.select("#map-tab").attr("style", "display:block")
-    d3.select("#home-tab").attr("style", "display:none") 
-})
-d3.select("#home-tab-id").on("click", () => {
-    hideAll()
-    d3.select("#home-tab").attr("style", "display:block")
-
 })
 
 //--PLOT--
@@ -193,7 +197,7 @@ function updatePlotly() {
         //Create the plot depending of which condition was met
         Plotly.newPlot('plot',plotData,layout)
 }
-
+//--MAP--
 // Creating the map object
 var myMap = L.map("map", {
     center: [0,0],

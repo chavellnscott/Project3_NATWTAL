@@ -45,8 +45,12 @@ crossorigin=""/>
   <div class="row">
   <!--Home Tab-->
     <div id ="home-tab">
-        <h3>Home</h3>
-        <p>Instructions</p>
+        <h3>Welcome!</h3>
+        <p>Do you like to travel? Have you ever wanted to visit a new country?
+            Wouldn't it be easier to pick a destination if you knew more about it?
+            Here at NATWTAL Tours Company, we want to make that easier for you. 
+            Click the tabs above to learn more about countries we have data on. 
+        </p>
         <div class="row">
             <div class="col text-center">
                 <img src="World-map-countries-flags.jpg" class="img-fluid" alt="Cinque Terre" width="1000" height="550"> 
@@ -58,7 +62,7 @@ crossorigin=""/>
 <!--Table Tab-->
     <div id = "table-tab">
         <h3>Table</h3>
-        <p>Instructions</p>
+        <p>Here is a table of all the countries we have data on. You can sort each column or search using key words.</p>
         <div class="row">
                     <table class="table table-striped table-sm" id="world-data">
                         <thead>
@@ -76,7 +80,7 @@ crossorigin=""/>
 <!--Plot Tab-->
     <div id = "plot-tab">
         <h3>Plot</h3>
-        <p>Instructions</p>
+        <p>Here you can easily compare each country based on what criteria you are interested in.</p>
         <div class="well">
             <h5>Language:</h5>
             <input type="text" id="selLanguage" onchange="updatePlotly(this.value)">
@@ -91,12 +95,14 @@ crossorigin=""/>
     <!--Map Tab-->
     <div id = "map-tab">
         <h3>Map</h3>
-        <p>Instructions</p>
-        <div id="map"></div>
+        <p>Here you can click on each country to get information about it. You can also highlight countries that speak your language by typing in the box below.
+        </p>
+    
         <div class="well">
             <h5>Language:</h5>
             <input type="text" id="selLanguage2" onchange="updateLeaflet(this.value)">
       </div>
+      <div id="map"></div>
     </div>
 </div>
 </div>
