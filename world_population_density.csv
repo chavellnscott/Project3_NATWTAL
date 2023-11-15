@@ -1,0 +1,236 @@
+﻿#,Country (or dependency),Population,Density
+,,-2023,(P/Km²)
+1,India,"1,428,627,663",481
+2,China,"1,425,671,352",152
+3,United States,"339,996,563",37
+4,Indonesia,"277,534,122",153
+5,Pakistan,"240,485,658",312
+6,Nigeria,"223,804,632",246
+7,Brazil,"216,422,446",26
+8,Bangladesh,"172,954,319","1,329"
+9,Russia,"144,444,359",9
+10,Mexico,"128,455,567",66
+11,Ethiopia,"126,527,060",127
+12,Japan,"123,294,513",338
+13,Philippines,"117,337,368",394
+14,Egypt,"112,716,598",113
+15,DR Congo,"102,262,808",45
+16,Vietnam,"98,858,950",319
+17,Iran,"89,172,767",55
+18,Turkey,"85,816,199",112
+19,Germany,"83,294,633",239
+20,Thailand,"71,801,279",141
+21,United Kingdom,"67,736,802",280
+22,Tanzania,"67,438,106",76
+23,France,"64,756,584",118
+24,South Africa,"60,414,495",50
+25,Italy,"58,870,762",200
+26,Kenya,"55,100,586",97
+27,Myanmar,"54,577,997",84
+28,Colombia,"52,085,168",47
+29,South Korea,"51,784,059",533
+30,Uganda,"48,582,334",243
+31,Sudan,"48,109,006",27
+32,Spain,"47,519,628",95
+33,Argentina,"45,773,884",17
+34,Algeria,"45,606,480",19
+35,Iraq,"45,504,560",105
+36,Afghanistan,"42,239,854",65
+37,Poland,"41,026,067",134
+38,Canada,"38,781,291",4
+39,Morocco,"37,840,044",85
+40,Saudi Arabia,"36,947,025",17
+41,Ukraine,"36,744,634",63
+42,Angola,"36,684,202",29
+43,Uzbekistan,"35,163,944",83
+44,Yemen,"34,449,825",65
+45,Peru,"34,352,719",27
+46,Malaysia,"34,308,525",104
+47,Ghana,"34,121,985",150
+48,Mozambique,"33,897,354",43
+49,Nepal,"30,896,590",216
+50,Madagascar,"30,325,732",52
+51,Côte d'Ivoire,"28,873,034",91
+52,Venezuela,"28,838,499",33
+53,Cameroon,"28,647,293",61
+54,Niger,"27,202,843",21
+55,Australia,"26,439,111",3
+56,North Korea,"26,160,821",217
+57,Taiwan,"23,923,276",676
+58,Mali,"23,293,698",19
+59,Burkina Faso,"23,251,485",85
+60,Syria,"23,227,014",126
+61,Sri Lanka,"21,893,579",349
+62,Malawi,"20,931,751",222
+63,Zambia,"20,569,737",28
+64,Romania,"19,892,812",86
+65,Chile,"19,629,590",26
+66,Kazakhstan,"19,606,633",7
+67,Chad,"18,278,568",15
+68,Ecuador,"18,190,484",73
+69,Somalia,"18,143,378",29
+70,Guatemala,"18,092,026",169
+71,Senegal,"17,763,163",92
+72,Netherlands,"17,618,299",522
+73,Cambodia,"16,944,826",96
+74,Zimbabwe,"16,665,409",43
+75,Guinea,"14,190,612",58
+76,Rwanda,"14,094,683",571
+77,Benin,"13,712,828",122
+78,Burundi,"13,238,559",516
+79,Tunisia,"12,458,223",80
+80,Bolivia,"12,388,571",11
+81,Haiti,"11,724,763",425
+82,Belgium,"11,686,140",386
+83,Jordan,"11,337,052",128
+84,Dominican Republic,"11,332,972",235
+85,Cuba,"11,194,449",105
+86,South Sudan,"11,088,796",18
+87,Sweden,"10,612,086",26
+88,Honduras,"10,593,798",95
+89,Czech Republic (Czechia),"10,495,295",136
+90,Azerbaijan,"10,412,651",126
+91,Greece,"10,341,277",80
+92,Papua New Guinea,"10,329,931",23
+93,Portugal,"10,247,605",112
+94,Hungary,"10,156,239",112
+95,Tajikistan,"10,143,543",72
+96,United Arab Emirates,"9,516,871",114
+97,Belarus,"9,498,238",47
+98,Israel,"9,174,520",424
+99,Togo,"9,053,799",166
+100,Austria,"8,958,960",109
+101,Switzerland,"8,796,669",223
+102,Sierra Leone,"8,791,092",122
+103,Laos,"7,633,779",33
+104,Hong Kong,"7,491,609","7,135"
+105,Serbia,"7,149,077",82
+106,Nicaragua,"7,046,310",59
+107,Libya,"6,888,388",4
+108,Paraguay,"6,861,524",17
+109,Kyrgyzstan,"6,735,347",35
+110,Bulgaria,"6,687,717",62
+111,Turkmenistan,"6,516,100",14
+112,El Salvador,"6,364,943",307
+113,Congo,"6,106,869",18
+114,Singapore,"6,014,723","8,592"
+115,Denmark,"5,910,913",139
+116,Slovakia,"5,795,199",121
+117,Central African Republic,"5,742,315",9
+118,Finland,"5,545,475",18
+119,Norway,"5,474,360",15
+120,Liberia,"5,418,377",56
+121,State of Palestine,"5,371,230",892
+122,Lebanon,"5,353,930",523
+123,New Zealand,"5,228,100",20
+124,Costa Rica,"5,212,173",102
+125,Ireland,"5,056,935",73
+126,Mauritania,"4,862,989",5
+127,Oman,"4,644,384",15
+128,Panama,"4,468,087",60
+129,Kuwait,"4,310,108",242
+130,Croatia,"4,008,617",72
+131,Eritrea,"3,748,901",37
+132,Georgia,"3,728,282",54
+133,Mongolia,"3,447,157",2
+134,Moldova,"3,435,931",105
+135,Uruguay,"3,423,108",20
+136,Puerto Rico,"3,260,314",368
+137,Bosnia and Herzegovina,"3,210,847",63
+138,Albania,"2,832,439",103
+139,Jamaica,"2,825,544",261
+140,Armenia,"2,777,970",98
+141,Gambia,"2,773,168",274
+142,Lithuania,"2,718,352",43
+143,Qatar,"2,716,391",234
+144,Botswana,"2,675,352",5
+145,Namibia,"2,604,172",3
+146,Gabon,"2,436,566",9
+147,Lesotho,"2,330,318",77
+148,Guinea-Bissau,"2,150,842",76
+149,Slovenia,"2,119,675",105
+150,North Macedonia,"2,085,679",83
+151,Latvia,"1,830,211",29
+152,Equatorial Guinea,"1,714,671",61
+153,Trinidad and Tobago,"1,534,937",299
+154,Bahrain,"1,485,509","1,955"
+155,Timor-Leste,"1,360,596",91
+156,Estonia,"1,322,765",31
+157,Mauritius,"1,300,557",641
+158,Cyprus,"1,260,138",136
+159,Eswatini,"1,210,822",70
+160,Djibouti,"1,136,455",49
+161,Réunion,"981,796",393
+162,Fiji,"936,375",51
+163,Comoros,"852,075",458
+164,Guyana,"813,834",4
+165,Bhutan,"787,424",21
+166,Solomon Islands,"740,424",26
+167,Macao,"704,149","23,472"
+168,Luxembourg,"654,768",253
+169,Montenegro,"626,485",47
+170,Suriname,"623,236",4
+171,Cabo Verde,"598,682",149
+172,Western Sahara,"587,259",2
+173,Micronesia,"544,321",778
+174,Malta,"535,064","1,672"
+175,Maldives,"521,021","1,737"
+176,Brunei,"452,524",86
+177,Bahamas,"412,623",41
+178,Belize,"410,825",18
+179,Guadeloupe,"395,839",234
+180,Iceland,"375,318",4
+181,Martinique,"366,981",346
+182,Mayotte,"335,995",896
+183,Vanuatu,"334,506",27
+184,French Guiana,"312,155",4
+185,French Polynesia,"308,872",84
+186,New Caledonia,"292,991",16
+187,Barbados,"281,995",656
+188,Sao Tome & Principe,"231,856",242
+189,Samoa,"225,681",80
+190,Curaçao,"192,077",433
+191,Saint Lucia,"180,251",295
+192,Guam,"172,952",320
+193,Kiribati,"133,515",165
+194,Grenada,"126,183",371
+195,Tonga,"107,773",150
+196,Seychelles,"107,660",234
+197,Aruba,"106,277",590
+198,St. Vincent & Grenadines,"103,698",266
+199,U.S. Virgin Islands,"98,750",282
+200,Antigua and Barbuda,"94,298",214
+201,Isle of Man,"84,710",149
+202,Andorra,"80,088",170
+203,Dominica,"73,040",97
+204,Cayman Islands,"69,310",289
+205,Bermuda,"64,069","1,281"
+206,Greenland,"56,643",0
+207,Faeroe Islands,"53,270",38
+208,Northern Mariana Islands,"49,796",108
+209,Saint Kitts & Nevis,"47,755",184
+210,Turks and Caicos,"46,062",48
+211,Sint Maarten,"44,222","1,301"
+212,American Samoa,"43,914",220
+213,Marshall Islands,"41,996",233
+214,Liechtenstein,"39,584",247
+215,Monaco,"36,297","24,360"
+216,San Marino,"33,642",561
+217,Gibraltar,"32,688","3,269"
+218,Saint Martin,"32,077",605
+219,British Virgin Islands,"31,538",210
+220,Caribbean Netherlands,"27,148",83
+221,Palau,"18,058",39
+222,Cook Islands,"17,044",71
+223,Anguilla,"15,899",177
+224,Nauru,"12,780",639
+225,Wallis & Futuna,"11,502",82
+226,Tuvalu,"11,396",380
+227,Saint Barthelemy,"10,994",524
+228,Saint Pierre & Miquelon,"5,840",25
+229,Saint Helena,"5,314",14
+230,Montserrat,"4,386",44
+231,Falkland Islands,"3,791",0
+232,Niue,"1,935",7
+233,Tokelau,"1,893",189
+234,Holy See,518,"1,295"
